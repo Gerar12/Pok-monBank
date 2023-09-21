@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Bank</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-r from-yellow-300 via-red-500 to-blue-500 font-sans w-full h-full flex justify-center p-5"
+  >
+    <!-- Pantalla de Acciones -->
+    <div
+      id="actions"
+      class="bg-white p-8 rounded-lg shadow-md flex flex-col items-center border-4 border-red-500 mt-5"
+    >
+      <h2 class="mb-4 text-2xl font-extrabold">
+        Bienvenido, <span>[Nombre del usuario]</span>
+      </h2>
+      <h3 class="mb-2 text-xl">Número de cuenta: [Número de cuenta]</h3>
+
+      <!-- Botones para diferentes acciones -->
+      <div class="flex flex-wrap justify-between gap-5 mt-5">
+        <button
+          class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold px-4 py-2 rounded mb-2 md:mb-0 w-full md:w-auto"
+        >
+          Depositar
+        </button>
+        <button
+          class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold px-4 py-2 rounded mb-2 md:mb-0 w-full md:w-auto"
+        >
+          Retirar
+        </button>
+        <button
+          class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold px-4 py-2 rounded mb-2 md:mb-0 w-full md:w-auto"
+        >
+          Consultar Saldo
+        </button>
+        <button
+          class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold px-4 py-2 rounded w-full md:w-auto"
+        >
+          Pagar Servicios
+        </button>
+      </div>
+
+      <!-- Secciones omitidas para simplicidad -->
+
+      <!-- Botón para salir -->
+      <button
+        class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded mt-10 w-40 font-extrabold"
+      >
+        Salir
+      </button>
+    </div>
+    <button
+      class="bg-red-500 text-white w-16 h-16 rounded-full flex items-center justify-center pl-3 absolute bottom-5 right-5"
+    >
+      <div
+        class="bg-white w-8 h-8 rounded-full flex items-center justify-center"
+      >
+        <div class="bg-black w-4 h-4 rounded-full"></div>
+      </div>
+          
+    </button>
+  </body>
+</html>

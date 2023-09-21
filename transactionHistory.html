@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título de la página -->
+    <title>Pokémon Bank - Historial de Transacciones</title>
+
+    <!-- Importando Tailwind CSS para estilizar la página -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- Cuerpo del documento -->
+  <!-- Esta página es para que el usuario vea su historial de transacciones -->
+  <body
+    class="bg-gradient-to-r from-yellow-300 via-red-500 to-blue-500 font-sans w-full h-full flex justify-center p-5"
+  >
+    <!-- Contenedor Principal -->
+    <div
+      id="actions"
+      class="bg-white p-8 rounded-lg shadow-md flex flex-col items-center border-4 border-red-500"
+    >
+      <!-- Título del formulario -->
+      <h2 class="mb-4 text-2xl font-extrabold text-center">
+        Historial de transacciones
+      </h2>
+
+      <!-- Tabla de historial de transacciones -->
+      <table
+        class="min-w-full text-center border-collapse border border-gray-500 md:w-96"
+      >
+        <thead>
+          <tr>
+            <th class="border border-gray-500 px-4 py-2">Fecha</th>
+            <th class="border border-gray-500 px-4 py-2">Tipo</th>
+            <th class="border border-gray-500 px-4 py-2">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-500 px-4 py-2">2023-09-18</td>
+            <td class="border border-gray-500 px-4 py-2">Depósito</td>
+            <td class="border border-gray-500 px-4 py-2">$100</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-500 px-4 py-2">2023-09-18</td>
+            <td class="border border-gray-500 px-4 py-2">Depósito</td>
+            <td class="border border-gray-500 px-4 py-2">$100</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-500 px-4 py-2">2023-09-18</td>
+            <td class="border border-gray-500 px-4 py-2">Depósito</td>
+            <td class="border border-gray-500 px-4 py-2">$100</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Botón para regresar -->
+      <button
+        class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded mt-5 w-40 font-extrabold"
+      >
+        Regresar
+      </button>
+    </div>
+
+    <!-- Botón en forma de Poké Ball -->
+    <button
+      class="bg-red-500 text-white w-16 h-16 rounded-full flex items-center justify-center absolute bottom-5 right-5"
+    >
+      <div
+        class="bg-white w-8 h-8 rounded-full flex items-center justify-center"
+      >
+        <div class="bg-black w-4 h-4 rounded-full"></div>
+      </div>
+    </button>
+  </body>
+</html>

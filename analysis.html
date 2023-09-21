@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Bank - Gráfico de Transacciones</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-r from-yellow-300 via-red-500 to-blue-500 font-sans w-full h-full flex justify-center p-5"
+  >
+    <!-- Contenedor Principal -->
+    <div
+      class="bg-white p-4 sm:p-8 rounded-lg flex flex-col items-center border-4 border-red-500 max-w-full w-full sm:w-auto"
+    >
+      <!-- Título del formulario -->
+      <h2 class="mb-4 text-lg sm:text-2xl font-extrabold">
+        Pantalla de gráfico
+      </h2>
+
+      <!-- Contenedor del gráfico -->
+      <div
+        id="chart-container"
+        class="w-full h-32 sm:h-64 bg-gray-200 rounded-lg mb-4 flex"
+      >
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <!-- Botón para regresar o realizar otra acción -->
+      <button
+        class="bg-yellow-500 hover:bg-yellow-600 text-white px-2 sm:px-4 py-1 sm:py-2 rounded mt-4 sm:mt-10 w-32 sm:w-40 font-extrabold"
+      >
+        Regresar
+      </button>
+    </div>
+
+    <!-- Botón en forma de Poké Ball -->
+    <button
+      class="bg-red-500 text-white w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center absolute bottom-2 sm:bottom-5 right-2 sm:right-5"
+    >
+      <div
+        class="bg-white w-6 sm:w-8 h-6 sm:h-8 rounded-full flex items-center justify-center"
+      >
+        <div class="bg-black w-3 sm:w-4 h-3 sm:h-4 rounded-full"></div>
+      </div>
+    </button>
+
+    <!-- Importando Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Script para generar el gráfico -->
+    <script src="./javascript/analysis.js"></script>
+  </body>
+</html>
